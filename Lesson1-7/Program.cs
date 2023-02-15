@@ -1,4 +1,4 @@
-﻿System.Console.WriteLine("Показать последнюю цифру трёхзначного числа");
+﻿System.Console.WriteLine("Показать вторую цифру трёхзначного числа");
 System.Console.WriteLine();
 System.Console.WriteLine("Введите трёхзначное число: ");
 string number = Console.ReadLine();
@@ -9,5 +9,5 @@ if (num / 100 >= 10 || num / 100 < 1)
 }
 else
 {
-    Console.Write($"Последняя цифра введённого Вами числа - {num % 100 % 10}");
+    Console.Write($"Вторая цифра введённого Вами числа - {num / 10 % 10}");
 }
