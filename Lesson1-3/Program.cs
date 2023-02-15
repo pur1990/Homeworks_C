@@ -11,12 +11,8 @@ string number3 = Console.ReadLine();
 int num3 = Convert.ToInt32(number3);
 int max = num1;
 if (num2 > max)
-{
     max = num2;
-}
 if (num3 > max)
-{
     max = num3;
-}
 System.Console.WriteLine();
 System.Console.WriteLine($"Максимальное число = {max}");

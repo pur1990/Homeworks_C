@@ -1,0 +1,12 @@
+﻿System.Console.WriteLine("Дано число из отрезка [10, 99]. Показать наибольшую цифру числа");
+System.Console.WriteLine();
+int num = new Random().Next(10, 100);
+System.Console.WriteLine($"Выбрано число {num}");
+int max = 0;
+int digit1 = num / 10;
+int digit2 = num % 10;
+if (digit1 > digit2) max = digit1;
+else max = digit2;
+System.Console.WriteLine();
+System.Console.WriteLine($"В числе {num} наибольшая цифра {max}");
+System.Console.WriteLine();
