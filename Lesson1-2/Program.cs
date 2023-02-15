@@ -1,4 +1,5 @@
-﻿System.Console.WriteLine();
+﻿System.Console.WriteLine("По заданному номеру дня недели вывести его название");
+System.Console.WriteLine();
 string[] Days = { "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресенье" };
 
 System.Console.Write("Введите номер дня недели:   ");
