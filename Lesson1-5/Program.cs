@@ -10,4 +10,3 @@ while (num < N)
     num++;
     if (num % 2 == 0) System.Console.Write($"{num} ");
 }
-System.Console.WriteLine();

@@ -10,4 +10,3 @@ string Result = $"Число {num1} не является квадратом ч�
 if (num1 == num2 * num2)
     Result = Result.Replace(" не", "");
 System.Console.WriteLine(Result);
-System.Console.WriteLine();

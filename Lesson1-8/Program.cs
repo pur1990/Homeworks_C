@@ -7,6 +7,4 @@ int digit1 = num / 10;
 int digit2 = num % 10;
 if (digit1 > digit2) max = digit1;
 else max = digit2;
-System.Console.WriteLine();
 System.Console.WriteLine($"В числе {num} наибольшая цифра {max}");
-System.Console.WriteLine();
