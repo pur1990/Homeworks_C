@@ -1,12 +1,8 @@
 ﻿System.Console.WriteLine("Задать номер четверти, показать диапазоны для возможных координат");
 System.Console.WriteLine();
 int QuarterNum = 0;
-System.Console.Write("Введите первое число: ");
-string num1 = Console.ReadLine();
-int x = Convert.ToInt32(num1);
-System.Console.Write("Введите второе число: ");
-string num2 = Console.ReadLine();
-int y = Convert.ToInt32(num2);
+int x = ReadInt("Введите координату X первой точки: ");
+int y = ReadInt("Введите координату Y первой точки: ");
 System.Console.WriteLine($"Координаты точки: ({x}, {y})");
 if (x * y == 0) QuarterNum = 0;
 else if (x > 0 && y > 0) QuarterNum = 1;
@@ -17,3 +13,11 @@ System.Console.Write($"Точка с координатами ({x}, {y}) нах�
 if (QuarterNum == 0) System.Console.WriteLine("на одной из оси координат");
 else System.Console.WriteLine($"в {QuarterNum}-й четверти");
 System.Console.WriteLine();
+
+
+// Функция ввода сообщения (научился сокращать :-))
+int ReadInt(string message)
+{
+    Console.Write(message);
+    return Convert.ToInt32(Console.ReadLine());
+}
